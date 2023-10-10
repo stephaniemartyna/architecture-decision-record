@@ -10,15 +10,9 @@ ___
 To facilitate secure and convenient transactions, our team must make a judicious choice in selecting and integrating payment gateways. Security, ease of integration, and compatibility with our app's target platforms are pivotal factors to consider, as the payment process directly affects user trust and satisfaction. This, with the international expansion requirments, we will be selecting between Authorize.net, and Stripe.
 
 **Decision**
-Based on our client's needs for this application we will be using Stripe.
-Key points:
-- Achieve higher customer conversion rates by leveraging built-in optimizations, offering access to a diverse selection of over 100 payment methods, and providing a streamlined one-click checkout process. Seamlessly integrate online and in-person payments to deliver a unified and hassle-free customer experience.
-  
-- Gain a global presence while maintaining a local touch by swiftly entering new markets through the introduction of region-specific payment methods and displaying prices in local currencies. Expand your sales footprint across 195+ countries and streamline the complexities of managing multiple currencies, ultimately reducing operational costs.
-  
-- Enhance revenue while minimizing fraudulent activities by harnessing the power of Stripe's machine learning-driven optimizations, which have been fine-tuned using extensive data from billions of transactions. This automated system reduces fraud risks and enhances authorization rates.
-  
-- Accelerate development cycles and reduce expenses by boosting developer productivity, ensuring minimal downtime through our industry-leading reliability, and cutting costs via the adoption of alternative payment methods and payment channels.
+After evaluating the requirements and considering the factors of security, ease of use, compatibility, and future scalability, we have decided to integrate Stripe as the primary payment gateway for the mobile app.
+
+We considered other payment gateway options, such as Authorize.net, PayPal, and Square. However, Stripe stood out as the most suitable choice due to its strong security, ease of integration, and compatibility with our app's target platforms.
 
 **Rationale**
 

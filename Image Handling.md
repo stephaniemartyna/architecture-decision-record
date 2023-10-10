@@ -7,57 +7,24 @@ ___
 # Image Handling
 
 **Context**
-The app will display product images of varying sizes and resolutions. To ensure optimal performance, we must select an image storage solution and implement techniques such as caching, lazy loading, and compression. We will be choosing between Cloudflare, Fastly, and Akamai.
+We are in the process of selecting a content delivery and image handling provider for our mobile app project for a retail company. The app has specific requirements related to offline mode support, push notifications, payment gateways, analytics, localization, and image handling.
 
 **Decision**
-Based on our client's need for international coverage, we will be selecting Akamai. 
-Akamai features:
-- Streamline workflows related to visual media optimization, management, and delivery.
-- Drastically cut down the resources required for responsive web design, saving time and costs.
-- Remove the need for labor-intensive and error-prone manual tasks.
-- Enable video playback on mobile devices even with high-latency cellular connections.
-- Enhance search engine optimization by reducing byte weight and improving responsiveness.
-- Lower both storage and network expenses by transmitting fewer bytes.
+After a thorough evaluation of the two options, we have decided to select Cloudflare as our content delivery and image handling provider for the retail mobile app project. This decision is based on the following considerations, which take into account the specific project requirements:
 
 **Rationale**
 
-- **Streamline workflows related to visual media optimization, management, and delivery.**:
-   - Streamlining these workflows ensures that media assets can be efficiently handled, reducing the complexity of managing various formats, sizes, and resolutions. This simplification leads to improved productivity, faster content updates, and a more seamless user experience.
+- **Offline Mode Support**: Cloudflare's robust content delivery network (CDN) and image optimization features are well-suited to support offline mode. It can efficiently cache and deliver content, including product images, to users even when they are not connected to the internet. When connectivity is restored, Cloudflare can seamlessly sync data with the server, ensuring a smooth offline and online experience for customers.
 
-- **Drastically cut down the resources required for responsive web design, saving time and costs**:
-   - Responsive web design requires creating and maintaining versions of a website that adapt to various screen sizes and devices. By reducing the time, cost, and effort involved, organizations can allocate resources more efficiently, accelerate development cycles, and deliver a consistent user experience across different platforms.
+- **Localization**: The need for localization techniques and frameworks to support multiple languages and cultural preferences is a separate consideration from content delivery and image handling. We will decide on localization strategies and frameworks as part of the app's overall architecture.
 
-- **Remove the need for labor-intensive and error-prone manual tasks**:
-   - Manual processes in media handling are not only slow but also prone to errors. Automating these processes not only improves efficiency but also ensures a higher level of accuracy, reducing the risk of mistakes in media optimization and delivery.
-
-- **Enable video playback on mobile devices even with high-latency cellular connections**:
-   - Enabling video playback on mobile devices, especially in areas with high-latency cellular connections, enhances the accessibility and engagement of content. This can lead to increased user satisfaction, longer time spent on the platform, and potentially higher conversion rates.
-
-- **Enhance search engine optimization by reducing byte weight and improving responsiveness**:
-   - Search engines prioritize websites that load quickly and efficiently. By reducing byte weight and improving responsiveness, a website is more likely to rank higher in search engine results. This can result in increased organic traffic and improved visibility for the website.
-
-- **Lower both storage and network expenses by transmitting fewer bytes**:
-   - Transmitting fewer bytes not only reduces data transfer costs but also minimizes the storage requirements for media assets. This is particularly beneficial for businesses and organizations that need to manage large volumes of media content, as it leads to cost savings and more efficient use of resources.
+- **Image Handling**: Cloudflare's image optimization features, including caching, lazy loading, and compression, align with our requirements to display product images of varying sizes and resolutions while ensuring optimal performance. These features will help minimize load times and enhance the user experience.
 
 **Consequences**
 
-- **Cost**: 
-    - Storing images on a CDN may incur costs depending on the selected CDN provider and the volume of data transferred. These costs should be factored into the app's budget.
+By selecting Cloudflare as our content delivery and image handling provider, we anticipate the following consequences:
 
-- **Complexity**: 
-    - Implementing image caching, lazy loading, and compression can add complexity to the app's development. Developers need to carefully manage these techniques to ensure they work as intended and do not introduce new issues.
-
-- **Storage Space**: 
-    - Caching images locally on users' devices consumes storage space. Developers must strike a balance between caching enough images to improve performance and managing storage constraints.
-
-- **Maintenance**: 
-    - Continuous monitoring and maintenance are required to ensure that the CDN, caching, and compression processes function correctly. Over time, as the app evolves, these processes may need adjustments.
-
-- **Image Quality**: 
-    - Aggressive image compression can result in reduced image quality. Striking the right balance between image compression and quality is essential to maintain a visually appealing app.
-
-- **User Experience**: 
-    - Efficient image handling contributes to a positive user experience. However, if caching or lazy loading is not implemented correctly, users may encounter issues such as delayed image loading or broken images, leading to frustration.
-
-- **Bandwidth Savings**: 
-    - While image compression and lazy loading reduce data usage and improve performance, they may also result in bandwidth savings for users. This can be advantageous, especially in regions with limited data connectivity.
+- Efficient support for offline mode, ensuring customers can browse products and view order history even without an internet connection.
+- Reliable delivery of push notifications to keep customers informed about important updates and offers.
+- Optimized image handling, including caching and compression, for improved app performance.
+- Streamlined data synchronization with the server for a seamless offline-to-online experience.
