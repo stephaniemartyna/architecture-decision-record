@@ -7,34 +7,31 @@ ___
 # Push Notifications and Analytics
 
 **Context**
-User behavior tracking, and push notifications are essential for this applications function. We need to choose a service that provides detailed insights and metrics, along with reliable notifications. We will be choosing between Airship, and Subscribers.
+We are tasked with selecting a push notifications and analytics provider for our mobile app project for a retail company. The app requires the ability to send push notifications to users for order updates, new product arrivals, and exclusive offers. Additionally, we need a robust analytics solution to track user behavior, including product views, purchases, and loyalty program interactions. Two potential options, Subscribers and Airship, have been evaluated for these purposes.
 
 **Decision**
-Based on our client's needs for this application we will be selecting Subscribers. 
-Subscribers features:
-- Provides daily client analytics: including abandoned cart tracking, graphs , and charts. All located on one dashboard.
-- Push notifications: Including customer recapture, coupon creations, promotion and inventory change announcements.
-- Low cost: Clear pricing categories.
+After a thorough evaluation of both options, we have decided to select Airship as our push notifications and analytics provider for the retail mobile app project. This decision is based on the following considerations:
 
 **Rationale**
 
 - **Daily Client Analytics**:
-   - Rationale: Subscribers offers comprehensive daily client analytics, including abandoned cart tracking, graphs, and charts, all conveniently accessible from a single dashboard. This feature aligns perfectly with the client's goal of gaining deep insights into customer behavior and preferences, which is essential for making data-driven business decisions.
+   - Comprehensive Analytics: Airship offers comprehensive analytics capabilities that can track user behavior, engagement, and interactions within the app. This will provide us with valuable insights into how users interact with our app, enabling us to make data-driven decisions to improve the app's performance and user experience.
 
 - **Push Notifications**:
-   - Rationale: Subscribers provides a robust push notification system that includes customer recapture, coupon creations, promotion announcements, and inventory change notifications. This feature enables the client to engage with customers effectively, recover potential lost sales, and drive user engagement through personalized messaging.
+   - Airship's Expertise: Airship is a specialized provider in the field of push notifications and has a strong reputation for reliability and real-time delivery of notifications. This aligns well with our need to notify customers about order updates, new product arrivals, and exclusive offers in a timely and dependable manner.
 
-- **Low Cost**:
-   - Rationale: Subscribers offers transparent and cost-effective pricing categories. This aligns with the client's need for a budget-friendly solution that provides essential features without breaking the bank. By choosing a solution with clear pricing, the client can manage costs effectively and allocate resources efficiently.
+- **Integration and Ease of Use**:
+   - SDK Integration: Airship provides easy-to-integrate SDKs (Software Development Kits) for both push notifications and analytics, making it straightforward for our development team to implement these features into the app.
+
+- **Scalability**:
+   - Support for Growth: Airship has a reputation for scalability, which is essential for our app as the retail company plans to expand its customer base internationally. Airship can accommodate the increased load and user base as the app's popularity grows.
 
 **Consequences**
 
-- **Daily Client Analytics**:
-   - Enhanced understanding of customer behavior, improved decision-making, and the ability to identify areas for optimization.
+By selecting Airship as our push notifications and analytics provider, we anticipate the following consequences:
 
-- **Push Notifications**:
-   - Increased customer retention, higher sales conversion rates, and improved communication with customers.
-
-- **Low Cost**:
-   - Cost savings, predictable expenses, and better financial planning for the client's business.
+Reliable and timely delivery of push notifications to keep customers informed and engaged.
+Access to detailed analytics data to better understand user behavior and optimize the app's performance.
+Ease of integration with our app through provided SDKs.
+Support for scalability as the app expands to serve an international customer base.
 
