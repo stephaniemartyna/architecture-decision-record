@@ -44,7 +44,7 @@ CouchDB (Server-Side):
    - As the company expands, the database must be able to accomidate a growing user base. CouchDB has multiple scalability features such as horizontal scalability, load balancing, replication, and partitaioned databases that allow an efficient change in scale with a minimal impact on server performance. 
 
 - **Cost**
-   - PouchDB and CouchDB are free open-source software (FOSS) which reduces expansion and scalability costs as the client does not get charged for 
+   - PouchDB and CouchDB are free open-source software (FOSS) which reduces expansion and scalability costs.
 
 **Consequences**
 
