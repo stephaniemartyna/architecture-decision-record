@@ -7,16 +7,18 @@ ___
 # Native, Web, or Hybrid Application
 
 **Context**
-le context
+backend used for servers and data processing
 
 **Decision**
-decison
+We have decided to go with Python.
 - a
 - b
 - c
 
 
 **Rationale**
+
+python vs java
 
 - **a**:
    - a
