@@ -7,42 +7,35 @@ ___
 # Backend Language
 
 **Context**
-le context
+The project requires a backend server to host the retail company's information about products and user information such as order history. The language we choose for the server must be able to handle multiple instances of data syncronization and data manipulation in order to create a responsive user experience.
 
 **Decision**
-decison
-- a
-- b
-- c
+After thorough consideration we have selected Java as the backend language for this project.
+- Java has a high performance rating when it comes to server side operations.
+- Java supports multithreading and multiple concurrent requests.
+- Java is a highly scalable language.
+- Java offers a mature ecosystem with large libraries and frameworks.
+- Java puts considerable focus towards security.
 
 
 **Rationale**
 
-- **a**:
-   - a
+- **Performance**:
+   - Java has a high performance rating when it comes to backend server operations. This aspect is crusial for a retail app that may experience high traffic. Java's mulitthreaded performance outweighs the performance of Python and high traffic performance of Node.js.
 
-- **b**:
-   -  b
+- **Scalability**:
+   - As the user base grows, the backend must be able to handle increased traffic loads. Java's clustering and load balancing tools make it an excellent choice for scalability. Python is also scalable, but requires more development effort and potential trouble shooting. Node.js meets current project requirements for performance but lacks the scalability features of Java.
 
-- **c**:
-   - c
+- **Ecosystem**:
+   - Java, Python, and Node.js all offer a rich ecosystem of libraries, documentation and community support. Java is selected due to it's prominance it backend server application.
 
-- **d**:
-   - d
-
-- **e**:
-   - e
+- **Security**:
+   -Java pertains enterprise grade security. The language is strongly typed and pertains robust authentication and authorization frameworks which reduce risk of a security breach and simplifies prject development. Node.js offers middleware security from a third party, which increases project complexity. Python has unsatisfactory security features to provide a secure service to the users.
 
 **Consequences**
 
-- **a**
-   - a
+- **Memory Usage**
+   - Java generally requires more memory allocation than other backend languages. This constraint may pose an issue with server hardware limitations. We must be aware of any hardware constraints and implement an effective solution.
 
-- **b**: 
-   - b
-
-- **c**: 
-   - c
-
-- **d**
-   - d
+- **Complexity**: 
+   - The Java language is complex and tends to have a longer development time compared to Python or Node.js. This may affect future scalability. We must be aware of any current or future time constraints and plan development accordingly. 
