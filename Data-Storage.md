@@ -7,7 +7,7 @@ ___
 # Data Storage
 
 **Context**
-The project requirements state that the user should be able to view products and their purchase history when the application has limited to no internet connecivity. This requirement necessitates a lightweight data storage solution that can store medium to large amounts of data on the mobile device until the application reestablishes a network connection. The solution should be robust, providing accurate data and integrity during various network conditions.
+The project requirements state that the user should be able to view products and their purchase history when the application has limited to no internet connectivity. This requirement necessitates a lightweight data storage solution that can store medium to large amounts of data on the mobile device until the application reestablishes a network connection. The solution should be robust, providing accurate data and integrity during various network conditions.
 
 **Decision**
 Based the project requirements, we decided to adopt a combination of PouchDB for mobile devices and CouchDB for servers as our data storage solution.
@@ -29,10 +29,10 @@ CouchDB (Server-Side):
 **Rationale**
 
 - **Ecosystem**
-   - The features of PouchDB and CouchDB provide a more coherent, synergetic data storage solution. SQLite offers local database management but requires a seperate server side database to perform a sync. SQLite requires a custom solution in order to syncronize data effectivley without dataloss. 
+   - The features of PouchDB and CouchDB provide a more coherent, synergetic data storage solution. SQLite offers local database management but requires a separate server side database to perform a sync. SQLite requires a custom solution in order to synchronize data effectivley without data loss. 
 
 - **PouchDB Offline-Firt Design**:
-   - One of PouchDB's primary aspects is its support for offline mode with data syncronization. The offline-first design ensures a smooth user experience during limited to no network connectivity, providing the user uninterupted access to product information and their order history. This feature eliminates the need to develop a seperate solution for a robust and consistent data syncronization process, which reduces development time. 
+   - One of PouchDB's primary aspects is its support for offline mode with data syncronization. The offline-first design ensures a smooth user experience during limited to no network connectivity, providing the user uninterupted access to product information and their order history. This feature eliminates the need to develop a separate solution for a robust and consistent data syncronization process, which reduces development time. 
 
 - **PouchDB Cross-Platform Compatibility**:
    - PouchDB is compatible on iOS and Android platforms, which simplifies the development for hybrid apps. This allows us to deliver a consistent and reliable user experience.
@@ -41,18 +41,18 @@ CouchDB (Server-Side):
    - CouchDB's reliability, multi-master replication, and RESTful API provide the necessary backend infrastructure for data integrity and consistency for intermittent connectivity.
 
 - **CouchDB Scalability and Performance**
-   - As the company expands, the database must be able to accomidate a growing user base. CouchDB has multiple scalability features such as horizontal scalability, load balancing, replication, and partitaioned databases that allow an efficient change in scale with a minimal impact on server performance. 
+   - As the company expands, the database must be able to accommodate a growing user base. CouchDB has multiple scalability features such as horizontal scalability, load balancing, replication, and partitioned databases that allow an efficient change in scale with a minimal impact on server performance. 
 
 - **Cost**
    - PouchDB and CouchDB are free open-source software (FOSS) which reduces expansion and scalability costs.
 
 **Consequences**
 
-- **Server Infastructure**:
-   - A large point of consideration was the location of server hosting. In order to gain the high level of control, customization, optimization, compatibility and security with CouchDB, the database server would have to be hosted on-premise, which will increase infastructure costs. We found that the reduction in overall project complexity, reduced development time, database reliability, and specific project requirements, CouchDB and PouchDB become a cost effective solution.
+- **Server Infrastructure**:
+   - A large point of consideration was the location of server hosting. In order to gain the high level of control, customization, optimization, compatibility and security with CouchDB, the database server would have to be hosted on-premise, which will increase infrastructure costs. We found that the reduction in overall project complexity, reduced development time, database reliability, and specific project requirements, CouchDB and PouchDB become a cost effective solution.
 
 - **Complexity**: 
-   - While this approach introduces server management complexity, it ensures that the combination of PouchDB and CouchDB provides a robust data storage and synchronization solution, addressing the project's requirements for offline mode and data integrity and medium to large data storage. Implementing SQLite and a seperate backend database would increase syncronization complexity.
+   - While this approach introduces server management complexity, it ensures that the combination of PouchDB and CouchDB provides a robust data storage and synchronization solution, addressing the project's requirements for offline mode and data integrity and medium to large data storage. Implementing SQLite and a separate backend database would increase synchronization complexity.
 
 
 

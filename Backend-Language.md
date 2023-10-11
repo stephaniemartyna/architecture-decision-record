@@ -7,7 +7,7 @@ ___
 # Backend Language
 
 **Context**
-The project requires a backend server to host the retail company's information about products and user information such as order history. The language we choose for the server must be able to handle multiple instances of data syncronization and data manipulation in order to create a responsive user experience.
+The project requires a backend server to host the retail company's information about products and user information such as order history. The language we choose for the server must be able to handle multiple instances of data synchronization and data manipulation in order to create a responsive user experience.
 
 **Decision**
 After thorough consideration we have selected Java as the backend language for this project.
@@ -21,16 +21,16 @@ After thorough consideration we have selected Java as the backend language for t
 **Rationale**
 
 - **Performance**:
-   - Java has a high performance rating when it comes to backend server operations. This aspect is crusial for a retail app that may experience high traffic. Java's mulitthreaded performance outweighs the performance of Python and high traffic performance of Node.js.
+   - Java has a high performance rating when it comes to backend server operations. This aspect is crucial for a retail app that may experience high traffic. Java's mulitthreaded performance outweighs the performance of Python and high traffic performance of Node.js.
 
 - **Scalability**:
    - As the user base grows, the backend must be able to handle increased traffic loads. Java's clustering and load balancing tools make it an excellent choice for scalability. Python is also scalable, but requires more development effort and potential trouble shooting. Node.js meets current project requirements for performance but lacks the scalability features of Java.
 
 - **Ecosystem**:
-   - Java, Python, and Node.js all offer a rich ecosystem of libraries, documentation and community support. Java is selected due to it's prominance it backend server application.
+   - Java, Python, and Node.js all offer a rich ecosystem of libraries, documentation and community support. Java is selected due to it's prominence it backend server application.
 
 - **Security**:
-   -Java pertains enterprise grade security. The language is strongly typed and pertains robust authentication and authorization frameworks which reduce risk of a security breach and simplifies prject development. Node.js offers middleware security from a third party, which increases project complexity. Python has unsatisfactory security features to provide a secure service to the users.
+   -Java pertains enterprise grade security. The language is strongly typed and pertains robust authentication and authorization frameworks which reduce risk of a security breach and simplifies project development. Node.js offers middleware security from a third party, which increases project complexity. Python has unsatisfactory security features to provide a secure service to the users.
 
 **Consequences**
 

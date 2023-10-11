@@ -7,12 +7,12 @@ ___
 # User Interface
 
 **Context**
-Smooth interaction between users and the user interface is a crucial aspect for customer satisfaction and retention. We need to make significant architectural decisions to ensure the scalability, maintainability, and performance of the application accross mutliple platforms. 
+Smooth interaction between users and the user interface is a crucial aspect for customer satisfaction and retention. We need to make significant architectural decisions to ensure the scalability, maintainability, and performance of the application across multiple platforms. 
 
 **Decision**
 Based on the client's requirements for this application we decided on the React Native framework. 
 React Native features:
-- Near-native perfomance on iOS and Android platforms.
+- Near-native performance on iOS and Android platforms.
 - Third party plugin support allows the app to access device features and services.
 - React Native supports cross-platform development.
 - The framework supports future scalability for development and increased loads.
@@ -24,7 +24,7 @@ React Native features:
    - React Native offers near-native performance on both iOS and Android platforms by allowing developers to write components in JavaScript or TypeScript, which are then compiled to native code. This approach ensures that the app runs smoothly and efficiently, providing a smooth user experience.
 
 - **Third Party Plugin and Module Support**:
-   -  React Native offers an extensive library of third-party plugins and modules that provides access to device features and services. This allows us to integrate device systems such as camera access, location services, and biometric authentication efficiently. This accelerates development by reducing the amount of custom software requierd to develop. We chose React Native over Nativescript's direct API support due to the libraries offered in React Native.
+   -  React Native offers an extensive library of third-party plugins and modules that provides access to device features and services. This allows us to integrate device systems such as camera access, location services, and bio-metric authentication efficiently. This accelerates development by reducing the amount of custom software requierd to develop. We chose React Native over Nativescript's direct API support due to the libraries offered in React Native.
 
 - **Cross Platform Capability**:
    - React Native allows us to maintain a single codebase for both iOS and Android platforms. This reduces development time and ensures consistent behavior and design across both platforms. Any updates or changes can be implemented to one codebase and deployed to both platforms simultaneously, simplifying the development and maintenance process.
@@ -41,10 +41,10 @@ React Native features:
    - Nativescript offers greater performance on mobile devices compared to React Native, but Nativescript has fewer third-party libraries and plugins. Nativescript would require more custom solutions to be developed over React Native.
 
 - **Cross Platform Consistency**: 
-   - Maintaining a single codebase simplifies development, but it also means that any platform-specific features, designs or optimizations will need to be carefully managed. We should ensure that the application's user interface and user experience are consistent accross both iOS and Android platforms.
+   - Maintaining a single codebase simplifies development, but it also means that any platform-specific features, designs or optimizations will need to be carefully managed. We should ensure that the application's user interface and user experience are consistent across both iOS and Android platforms.
 
 - **Ecosystem Dynamics**: 
    - The ecosystem and community of React Native is dynamic and are prone to rapid change. Staying up to date with the latest changes in the framework is essential to ensure the longevity of the application. 
 
 - **Dependence on Third Party Plugins and Modules**
-   - While third party plugins and modules can accelerate development of the application, they may introduce dependency and compatibility issues. It is crusial to choose reputable, well maintained modules and plugins to avoid unnecessary issues.
+   - While third party plugins and modules can accelerate development of the application, they may introduce dependency and compatibility issues. It is crucial to choose reputable, well maintained modules and plugins to avoid unnecessary issues.
